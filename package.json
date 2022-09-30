@@ -1,0 +1,15 @@
+{
+  "name": "medusa-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm --filter backend start & pnpm --filter storefront start & pnpm --filter admin start",
+    "serve": "pnpm run start --stream --parallel --filter \"{apps}\"",
+    "build": "pnpm --filter backend build & pnpm --filter storefront build & pnpm --filter admin build"
+  },
+  "keywords": ["medusa", "ecommerce"],
+  "author": "",
+  "license": "ISC"
+}
