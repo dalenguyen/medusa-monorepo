@@ -5,11 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pnpm --filter backend start & pnpm --filter storefront start & pnpm --filter admin start",
+    "start": "pnpm --filter backend start & pnpm --filter storefront dev & pnpm --filter admin start",
     "serve": "pnpm run start --stream --parallel --filter \"{apps}\"",
-    "build": "pnpm --filter backend build & pnpm --filter storefront build & pnpm --filter admin build"
+    "build": "npx nx run-many --target=build --projects=backend,admin,storefront",
+    "affected:build": "nx affected:build",
+    "graph": "nx graph"
+
   },
-  "keywords": ["medusa", "ecommerce"],
+  "keywords": [
+    "medusa",
+    "ecommerce"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nx": "^14.8.2"
+  }
 }
