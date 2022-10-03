@@ -16,6 +16,7 @@
     "medusa-interfaces": "^1.3.3",
     "medusa-payment-manual": "^1.0.16",
     "medusa-payment-stripe": "^1.1.43",
+    "sqlite3": "^5.1.1",
     "typeorm": "^0.2.36"
   },
   "repository": "https://github.com/medusajs/medusa-starter-default.git",

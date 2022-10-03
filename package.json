@@ -1,11 +1,10 @@
 {
   "name": "medusa-monorepo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Monorepo for Medusa development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pnpm --filter backend start & pnpm --filter storefront dev & pnpm --filter admin start",
     "serve": "pnpm run start --stream --parallel --filter \"{apps}\"",
     "build": "npx nx run-many --target=build --projects=backend,admin,storefront",
     "affected:build": "nx affected:build",

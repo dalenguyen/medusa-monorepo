@@ -4,10 +4,12 @@
   "description": "A proprietary Admin system to manage Medusa Stores",
   "version": "0.1.0",
   "author": "@medusajs",
-  "resolutions": {
-    "devcert": "1.2.1",
-    "postcss": "^8.4.5",
-    "@types/react": "^16.14.26"
+  "pnpm": {
+    "overrides": {
+      "devcert": "1.2.1",
+      "postcss": "^8.4.5",
+      "@types/react": "^16.14.26"
+    }
   },
   "dependencies": {
     "@gatsbyjs/reach-router": "^1.3.9",
