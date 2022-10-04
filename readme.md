@@ -31,6 +31,13 @@ Make sure you have [PNPM](https://pnpm.io/installation) on your machine.
 pnpm i
 ```
 
+### Start all projects
+
+
+```
+pnpm start
+```
+
 ### Start project (NX)
 
 Nx uses the following form to run commands

@@ -1,0 +1,21 @@
+{
+    "projectType": "application",
+    "sourceRoot": "apps/storefront/src",
+    "prefix": "medusa",
+    "targets": {
+      "start": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "pnpm --filter storefront dev"
+        }
+      },
+      "build": {
+        "executor": "nx:run-commands",
+        "outputs": ["{options.outputPath}"],
+        "options": {
+          "command": "pnpm --filter storefront build"
+        }
+      }
+    },
+    "tags": []
+  }

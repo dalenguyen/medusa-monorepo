@@ -1,0 +1,23 @@
+{
+    "projectType": "application",
+    "sourceRoot": "apps/backend/src",
+    "prefix": "medusa",
+    "targets": {
+      "start": {
+        "executor": "nx:run-commands",
+        "outputs": ["{options.outputPath}"],
+        "options": {
+          "command": "pnpm --filter backend start"
+        }
+      },
+      "build": {
+        "executor": "nx:run-commands",
+        "outputs": ["{options.outputPath}"],
+        "options": {
+          "outputPath": "dist/apps/backend",
+          "command": "pnpm --filter backend build"
+        }
+      }
+    },
+    "tags": []
+  }

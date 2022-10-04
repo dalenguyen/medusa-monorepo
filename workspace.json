@@ -1,0 +1,10 @@
+{
+    "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+      "backend": "apps/backend",
+      "admin": "apps/admin",
+      "storefront": "apps/storefront"
+    }
+  }
+  
